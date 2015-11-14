@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CD6EC671BF7AB5500DD5FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6EC661BF7AB5500DD5FAF /* AppDelegate.swift */; };
+		2CD6EC691BF7AB5500DD5FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6EC681BF7AB5500DD5FAF /* ViewController.swift */; };
+		2CD6EC6C1BF7AB5500DD5FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD6EC6A1BF7AB5500DD5FAF /* Main.storyboard */; };
+		2CD6EC6E1BF7AB5500DD5FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD6EC6D1BF7AB5500DD5FAF /* Assets.xcassets */; };
+		2CD6EC711BF7AB5500DD5FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD6EC6F1BF7AB5500DD5FAF /* LaunchScreen.storyboard */; };
+		2CD6EC7C1BF7AB5600DD5FAF /* Roll_CityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6EC7B1BF7AB5600DD5FAF /* Roll_CityTests.swift */; };
+		2CD6EC871BF7AB5600DD5FAF /* Roll_CityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6EC861BF7AB5600DD5FAF /* Roll_CityUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CD6EC781BF7AB5600DD5FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CD6EC5B1BF7AB5500DD5FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CD6EC621BF7AB5500DD5FAF;
+			remoteInfo = "Roll City";
+		};
+		2CD6EC831BF7AB5600DD5FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CD6EC5B1BF7AB5500DD5FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CD6EC621BF7AB5500DD5FAF;
+			remoteInfo = "Roll City";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CD6EC631BF7AB5500DD5FAF /* Roll City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roll City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD6EC661BF7AB5500DD5FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CD6EC681BF7AB5500DD5FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CD6EC6B1BF7AB5500DD5FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CD6EC6D1BF7AB5500DD5FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CD6EC701BF7AB5500DD5FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CD6EC721BF7AB5500DD5FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD6EC771BF7AB5600DD5FAF /* Roll CityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roll CityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD6EC7B1BF7AB5600DD5FAF /* Roll_CityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roll_CityTests.swift; sourceTree = "<group>"; };
+		2CD6EC7D1BF7AB5600DD5FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD6EC821BF7AB5600DD5FAF /* Roll CityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roll CityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD6EC861BF7AB5600DD5FAF /* Roll_CityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roll_CityUITests.swift; sourceTree = "<group>"; };
+		2CD6EC881BF7AB5600DD5FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CD6EC601BF7AB5500DD5FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD6EC741BF7AB5600DD5FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD6EC7F1BF7AB5600DD5FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CD6EC5A1BF7AB5400DD5FAF = {
+			isa = PBXGroup;
+			children = (
+				2CD6EC651BF7AB5500DD5FAF /* Roll City */,
+				2CD6EC7A1BF7AB5600DD5FAF /* Roll CityTests */,
+				2CD6EC851BF7AB5600DD5FAF /* Roll CityUITests */,
+				2CD6EC641BF7AB5500DD5FAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CD6EC641BF7AB5500DD5FAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CD6EC631BF7AB5500DD5FAF /* Roll City.app */,
+				2CD6EC771BF7AB5600DD5FAF /* Roll CityTests.xctest */,
+				2CD6EC821BF7AB5600DD5FAF /* Roll CityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CD6EC651BF7AB5500DD5FAF /* Roll City */ = {
+			isa = PBXGroup;
+			children = (
+				2CD6EC661BF7AB5500DD5FAF /* AppDelegate.swift */,
+				2CD6EC681BF7AB5500DD5FAF /* ViewController.swift */,
+				2CD6EC6A1BF7AB5500DD5FAF /* Main.storyboard */,
+				2CD6EC6D1BF7AB5500DD5FAF /* Assets.xcassets */,
+				2CD6EC6F1BF7AB5500DD5FAF /* LaunchScreen.storyboard */,
+				2CD6EC721BF7AB5500DD5FAF /* Info.plist */,
+			);
+			path = "Roll City";
+			sourceTree = "<group>";
+		};
+		2CD6EC7A1BF7AB5600DD5FAF /* Roll CityTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CD6EC7B1BF7AB5600DD5FAF /* Roll_CityTests.swift */,
+				2CD6EC7D1BF7AB5600DD5FAF /* Info.plist */,
+			);
+			path = "Roll CityTests";
+			sourceTree = "<group>";
+		};
+		2CD6EC851BF7AB5600DD5FAF /* Roll CityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2CD6EC861BF7AB5600DD5FAF /* Roll_CityUITests.swift */,
+				2CD6EC881BF7AB5600DD5FAF /* Info.plist */,
+			);
+			path = "Roll CityUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CD6EC621BF7AB5500DD5FAF /* Roll City */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CD6EC8B1BF7AB5600DD5FAF /* Build configuration list for PBXNativeTarget "Roll City" */;
+			buildPhases = (
+				2CD6EC5F1BF7AB5500DD5FAF /* Sources */,
+				2CD6EC601BF7AB5500DD5FAF /* Frameworks */,
+				2CD6EC611BF7AB5500DD5FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Roll City";
+			productName = "Roll City";
+			productReference = 2CD6EC631BF7AB5500DD5FAF /* Roll City.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CD6EC761BF7AB5600DD5FAF /* Roll CityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CD6EC8E1BF7AB5600DD5FAF /* Build configuration list for PBXNativeTarget "Roll CityTests" */;
+			buildPhases = (
+				2CD6EC731BF7AB5600DD5FAF /* Sources */,
+				2CD6EC741BF7AB5600DD5FAF /* Frameworks */,
+				2CD6EC751BF7AB5600DD5FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CD6EC791BF7AB5600DD5FAF /* PBXTargetDependency */,
+			);
+			name = "Roll CityTests";
+			productName = "Roll CityTests";
+			productReference = 2CD6EC771BF7AB5600DD5FAF /* Roll CityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2CD6EC811BF7AB5600DD5FAF /* Roll CityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CD6EC911BF7AB5600DD5FAF /* Build configuration list for PBXNativeTarget "Roll CityUITests" */;
+			buildPhases = (
+				2CD6EC7E1BF7AB5600DD5FAF /* Sources */,
+				2CD6EC7F1BF7AB5600DD5FAF /* Frameworks */,
+				2CD6EC801BF7AB5600DD5FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CD6EC841BF7AB5600DD5FAF /* PBXTargetDependency */,
+			);
+			name = "Roll CityUITests";
+			productName = "Roll CityUITests";
+			productReference = 2CD6EC821BF7AB5600DD5FAF /* Roll CityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CD6EC5B1BF7AB5500DD5FAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Ivan Melnikov";
+				TargetAttributes = {
+					2CD6EC621BF7AB5500DD5FAF = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 3LDSB75Q68;
+					};
+					2CD6EC761BF7AB5600DD5FAF = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 3LDSB75Q68;
+						TestTargetID = 2CD6EC621BF7AB5500DD5FAF;
+					};
+					2CD6EC811BF7AB5600DD5FAF = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 3LDSB75Q68;
+						TestTargetID = 2CD6EC621BF7AB5500DD5FAF;
+					};
+				};
+			};
+			buildConfigurationList = 2CD6EC5E1BF7AB5500DD5FAF /* Build configuration list for PBXProject "Roll City" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CD6EC5A1BF7AB5400DD5FAF;
+			productRefGroup = 2CD6EC641BF7AB5500DD5FAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CD6EC621BF7AB5500DD5FAF /* Roll City */,
+				2CD6EC761BF7AB5600DD5FAF /* Roll CityTests */,
+				2CD6EC811BF7AB5600DD5FAF /* Roll CityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CD6EC611BF7AB5500DD5FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD6EC711BF7AB5500DD5FAF /* LaunchScreen.storyboard in Resources */,
+				2CD6EC6E1BF7AB5500DD5FAF /* Assets.xcassets in Resources */,
+				2CD6EC6C1BF7AB5500DD5FAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD6EC751BF7AB5600DD5FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD6EC801BF7AB5600DD5FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CD6EC5F1BF7AB5500DD5FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD6EC691BF7AB5500DD5FAF /* ViewController.swift in Sources */,
+				2CD6EC671BF7AB5500DD5FAF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD6EC731BF7AB5600DD5FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD6EC7C1BF7AB5600DD5FAF /* Roll_CityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD6EC7E1BF7AB5600DD5FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD6EC871BF7AB5600DD5FAF /* Roll_CityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CD6EC791BF7AB5600DD5FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CD6EC621BF7AB5500DD5FAF /* Roll City */;
+			targetProxy = 2CD6EC781BF7AB5600DD5FAF /* PBXContainerItemProxy */;
+		};
+		2CD6EC841BF7AB5600DD5FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CD6EC621BF7AB5500DD5FAF /* Roll City */;
+			targetProxy = 2CD6EC831BF7AB5600DD5FAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CD6EC6A1BF7AB5500DD5FAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CD6EC6B1BF7AB5500DD5FAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CD6EC6F1BF7AB5500DD5FAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CD6EC701BF7AB5500DD5FAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CD6EC891BF7AB5600DD5FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CD6EC8A1BF7AB5600DD5FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CD6EC8C1BF7AB5600DD5FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Roll City/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Roll-City";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CD6EC8D1BF7AB5600DD5FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Roll City/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Roll-City";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2CD6EC8F1BF7AB5600DD5FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Roll CityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Roll-CityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roll City.app/Roll City";
+			};
+			name = Debug;
+		};
+		2CD6EC901BF7AB5600DD5FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Roll CityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Roll-CityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roll City.app/Roll City";
+			};
+			name = Release;
+		};
+		2CD6EC921BF7AB5600DD5FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Roll CityUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Roll-CityUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Roll City";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2CD6EC931BF7AB5600DD5FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Roll CityUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Roll-CityUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Roll City";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CD6EC5E1BF7AB5500DD5FAF /* Build configuration list for PBXProject "Roll City" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD6EC891BF7AB5600DD5FAF /* Debug */,
+				2CD6EC8A1BF7AB5600DD5FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CD6EC8B1BF7AB5600DD5FAF /* Build configuration list for PBXNativeTarget "Roll City" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD6EC8C1BF7AB5600DD5FAF /* Debug */,
+				2CD6EC8D1BF7AB5600DD5FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CD6EC8E1BF7AB5600DD5FAF /* Build configuration list for PBXNativeTarget "Roll CityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD6EC8F1BF7AB5600DD5FAF /* Debug */,
+				2CD6EC901BF7AB5600DD5FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CD6EC911BF7AB5600DD5FAF /* Build configuration list for PBXNativeTarget "Roll CityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD6EC921BF7AB5600DD5FAF /* Debug */,
+				2CD6EC931BF7AB5600DD5FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CD6EC5B1BF7AB5500DD5FAF /* Project object */;
+}
