@@ -39,61 +39,40 @@ class ViewController: DLHamburguerViewController {
 
 
 class ViewController2: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    //хранилище, бывший test array. по-хорошему вытащить в отдельную сущность, но и так сойдет
+    var dataSource = [PFObject]()
     
     @IBOutlet weak var tableView: UITableView!
     
-    var testarray = [String]()
+   
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        let query = PFQuery(className: "Hot_b")
-        let runkey = query.orderByAscending("name")
-        runkey.findObjectsInBackgroundWithBlock{
-            (object: [PFObject]?, error: NSError?) -> Void in
-            if error == nil {
-                if let object = object as [PFObject]! {
-                    for object in object {
-                        let load = object.objectForKey("name") as! String
-                        self.testarray.append(load)
-                    }
-                }
-                
-            }else{
-                print("Error: \(error!) \(error!.userInfo)")
-            }
-        }
-       sleep(1)
-        do_table_refresh ()
-       
+
+        self.didFetchData([])         //очистим список
+        self.fetchData()         //для не захломляемости вынесем в отдельный метод вытяжку данных
+        //sleep(1) <--- никогда, никогда так не делайте
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func do_table_refresh ()
-    {
-        dispatch_async(dispatch_get_main_queue(), {
-            self.tableView.reloadData()
-            return
-        })
-    }
-    
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return testarray.count
+        return self.dataSource.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TableViewCell
-        cell.lbTitle.text = testarray [indexPath.row]
+        let object = self.dataSource[indexPath.row]
+        let title = object.objectForKey("name")
+        if let title = title as? String{
+            cell.lbTitle.text = title
+        }else{
+            cell.lbTitle.text = "Unknow" //какой-то кривой объект. лучше такие моменты проверять на этапе парсинга
+        }
+        
+
         return cell
     }
     
@@ -101,9 +80,46 @@ class ViewController2: UIViewController,UITableViewDataSource,UITableViewDelegat
         if(segue.identifier == "DetailSegue"){
             // check for / catch all visible cell(s)
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let object: String = testarray[indexPath.row]
-                (segue.destinationViewController as! DetailView).currentObject = object as? PFObject
-                
-            }        }
+                let object = dataSource[indexPath.row]
+                let destViewController = segue.destinationViewController as? DetailView
+                destViewController?.currentObject = object
+            }
+        }
     }
+}
+
+//
+// MARK- Data Provider
+//
+extension ViewController2 {
+
+    
+    func fetchData(){
+        self.willFetchData()
+        let query = PFQuery(className: "Hot_b")
+        let runkey = query.orderByAscending("name")
+        runkey.findObjectsInBackgroundWithBlock{
+            (object: [PFObject]?, error: NSError?) -> Void in
+            guard let objects = object else{
+                //тут можно обработать ошибку, Сделал топорно пока
+                print(error)
+                return
+            }
+            dispatch_async(dispatch_get_main_queue(), {
+                self.didFetchData(objects)
+            })
+        }
+        
+    }
+    
+    func willFetchData(){
+        //обработчик начала загрузки. можно , к примеру, отобразить крутилку. ну или оповестить кого
+    }
+    
+    func didFetchData(data: [PFObject]){
+        //обработчик конца загрузки. 
+        self.dataSource = data
+        self.tableView.reloadData()
+    }
+
 }

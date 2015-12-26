@@ -26,11 +26,15 @@ class DetailView: UIViewController {
       //  print(currentObject!["name"])
         
         if let object = currentObject {
-
-            name.text = (currentObject!["name"] as! String)
-            opysanie.text = currentObject!["opisanie"] as! String
-            price.text = (object["price"] as! String)
-        //    image.image = (object["image"])
+            guard let nameS         = object["name"] as? String ,
+                      opisanieS     = object["opisanie"] as? String,
+                      priceS        = object["price"] as? Int else {
+                  //что то не так с объектом
+                  return
+            }
+            name.text = nameS
+            opysanie.text = opisanieS
+            price.text = "\(priceS)"
             print(name)
             print(opysanie)
             print(price)
